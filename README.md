@@ -1,4 +1,4 @@
-<h1 align="center">🌐 Configuração de Rede e Serviços em um Ambiente de Simulação 🖥️</h1>
+<h1 align="center">📡 Explorando Redes IPv4 e Roteamento Estático 🔗</h1>
 
 <p align="center">
   <a href="https://opensource.org/licenses/MIT">
@@ -7,44 +7,47 @@
 </p>
 
 ## 🌍 Sobre o Projeto 💼
-Nesta prática, continuaremos a explorar o endereçamento IPv4 e a introdução de um servidor em nossa rede. Utilizaremos o Packet Tracer da Cisco para criar um cenário de simulação.
+O principal objetivo desta prática é configurar rotas estáticas nos roteadores para estabelecer a comunicação entre as redes dos dois câmpus, Campina Grande e João Pessoa. Será utilizado o Packet Tracer para criar um ambiente fictício, conectando os dispositivos em cada rede.
 
 ## 📅 Cenário da Prática 🎮
 
 Neste cenário de prática, exploramos a configuração de uma rede composta por:
 
 ### Equipamentos:
-- 4 PCs 💻
-- 1 Servidor🌐
-- 1 Switch 2950-24 (com 24 portas) 🔄
+- 6 PCs 💻
+- 2 Servidor 🗄️
+- 2 Switch 2950-24 (com 24 portas) 🔀
+- 2 Roteador 2621XM 🛜
 
-**O objetivo é aprender sobre a configuração de rede e serviços relacionados em um ambiente simulado. Durante a prática, seguimos as etapas a seguir:** 📋📚
+**O objetivo é aprender sobre a configuração de rede e serviços relacionados em um ambiente simulado.** 📋📚
 
 ## 📑 Detalhes da Prática 📋
 
-Durante esta prática, seguimos as seguintes etapas:
+Durante esta prática, seguir as seguintes etapas:
 
-1. 🚀 **Configuração Inicial**:
-   - Realizamos as conexões dos dispositivos para montar a topologia da rede.
+1.🚀 **Configuração Inicial:**
+   - Adicionei módulos WIC-1T nos dois roteadores.
 
-2. 🌐 **Atribuição de Endereços Estáticos**:
-   - Os PCs e o servidor receberam endereços IP manualmente para estabelecer a comunicação na rede.
+2.🛜 **Configurando o Roteador de CG:**
+   - Configurei a interface Fast Ethernet e a porta Serial 0/0.
 
-3. 🔄 **Transição para DHCP**:
-   - Mudamos as configurações para permitir que os PCs obtenham endereços IP dinamicamente por meio de um servidor DHCP.
+3.🛜 **Configurando o Roteador de JP:**
+   - Configurei a interface Fast Ethernet e a porta Serial 0/0.
 
-4. ⚙️ **Configuração do DHCP Server**:
-   - Configuramos um servidor DHCP para atribuir IPs automaticamente aos dispositivos na rede.
+4.🔀 **Configurando Rotas Estáticas:**
+   - Adicionei rotas estáticas em ambos os roteadores para permitir a comunicação entre redes.
 
-5. 🌐 **Servidor Web**:
-   - Verificamos e acessamos um servidor web instalado no servidor, permitindo que os clientes acessem páginas web hospedadas nele.
+5.✔️ **Testando Conectividade:**
+   - Executei ping entre PCs de diferentes cidades.
+   - Utilizei o modo de simulação para verificar o caminho dos pacotes.
+  
+6.⚙️ **Resolução de Problemas:**
+   - Analisei as tabelas de roteamento nos roteadores.
+   - Adicionei rotas estáticas conforme necessário.
 
-6. 📄 **Edição de Páginas Web**:
-   - Editamos páginas web no servidor para entender o funcionamento de um servidor web.
-
-7. 🌐 **Configuração do Servidor DNS**:
-   - Configuramos um servidor DNS para associar nomes de domínio a endereços IP, permitindo que os clientes acessem o servidor web por meio de um nome de domínio.
-
+7.❗ **Configurando Serviços Adicionais:**
+   - Configurei domínios e páginas nos servidores WEB.
+   - Configurei servidores DNS nos dois servidores.
 
 ## 🤝 Como Você Pode Contribuir 📢
 
@@ -61,7 +64,7 @@ Durante esta prática, seguimos as seguintes etapas:
 ## 🔧 Projeto e Recursos 📊
 
 - Cenários de configuração de rede. 🌐🔍
-- Recursos incluem o Packet Tracer (disponível no Cisco Networking Academy), PCs virtuais, Servidor e Switch virtual. 💼🔮
+- Recursos incluem o Packet Tracer (disponível no Cisco Networking Academy), PCs virtuais, Servidores, Switches virtuais e Roteadores. 💼🔮
 - Documentação para auxiliar no aprendizado. 📄🎓
 
 ## 📄 Licença 📃
