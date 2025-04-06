@@ -1,9 +1,18 @@
 <h1 align="center">📡 Explorando Redes IPv4 e Roteamento Estático 🔗</h1>
 
 <p align="center">
+  <img src="https://img.shields.io/badge/Status-Conclu%C3%ADdo-brightgreen.svg" alt="Status do Projeto">
   <a href="https://opensource.org/licenses/MIT">
     <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License">
   </a>
+</p>
+
+<p align="center">
+  Projeto prático desenvolvido para simular e configurar <strong>roteamento estático</strong> entre redes distintas usando o <strong>Cisco Packet Tracer</strong>, conectando os campi de <strong>Campina Grande</strong> e <strong>João Pessoa</strong> com uma conexão de longa distância.
+</p>
+
+<p align="center">
+  <strong>📡 Roteamento entre redes, DHCP, DNS, Servidor Web e configuração completa via CLI!</strong>
 </p>
 
 ## 🌍 Sobre o Projeto 💼
@@ -15,66 +24,78 @@ Neste cenário de prática, exploramos a configuração de uma rede composta por
 
 ### Equipamentos:
 - 6 PCs 💻
-- 2 Servidor 🗄️
-- 2 Switch 2950-24 (com 24 portas) 🔀
-- 2 Roteador 2621XM 🛜
+- 2 Servidores 🗄️
+- 2 Switches 2950-24 (com 24 portas) 🔀
+- 2 Roteadores 2621XM 🛜
 
 **O objetivo é aprender sobre a configuração de rede e serviços relacionados em um ambiente simulado.** 📋📚
 
 ## 📑 Detalhes da Prática 📋
 
-Durante esta prática, seguir as seguintes etapas:
+Durante esta prática, foram seguidas as seguintes etapas:
 
-1.🚀 **Configuração Inicial:**
-   - Adicionei módulos WIC-1T nos dois roteadores.
+1. 🚀 **Configuração Inicial:**
+   - Adição dos módulos WIC-1T nos roteadores.
 
-2.🛜 **Configurando o Roteador de CG:**
-   - Configurei a interface Fast Ethernet e a porta Serial 0/0.
+2. 🛜 **Configurando o Roteador de CG:**
+   - Configuração da interface Fast Ethernet e porta Serial 0/0.
 
-3.🛜 **Configurando o Roteador de JP:**
-   - Configurei a interface Fast Ethernet e a porta Serial 0/0.
+3. 🛜 **Configurando o Roteador de JP:**
+   - Configuração da interface Fast Ethernet e porta Serial 0/0.
 
-4.🔀 **Configurando Rotas Estáticas:**
-   - Adicionei rotas estáticas em ambos os roteadores para permitir a comunicação entre redes.
+4. 🔀 **Configurando Rotas Estáticas:**
+   - Adição de rotas estáticas para permitir a comunicação entre redes.
 
-5.✔️ **Testando Conectividade:**
-   - Executei ping entre PCs de diferentes cidades.
-   - Utilizei o modo de simulação para verificar o caminho dos pacotes.
-  
-6.⚙️ **Resolução de Problemas:**
-   - Analisei as tabelas de roteamento nos roteadores.
-   - Adicionei rotas estáticas conforme necessário.
+5. ✔️ **Testando Conectividade:**
+   - Ping entre PCs de diferentes cidades.
+   - Utilização do modo simulação para verificação do caminho dos pacotes.
 
-7.❗ **Configurando Serviços Adicionais:**
-   - Configurei domínios e páginas nos servidores WEB.
-   - Configurei servidores DNS nos dois servidores.
+6. ⚙️ **Resolução de Problemas:**
+   - Análise das tabelas de roteamento.
+   - Ajustes com novas rotas conforme necessidade.
 
-## 🤝 Como Você Pode Contribuir 📢
+7. ❗ **Configurando Serviços Adicionais:**
+   - Configuração de domínios e páginas HTML nos servidores web.
+   - Configuração de servidores DNS em ambas as redes.
 
-- Sinta-se à vontade para sugerir melhorias ou correções. 🛠️💡
-- Compartilhe suas experiências ou insights sobre o aprendizado desses conceitos. 🗣️🤓
-- Participe da discussão e ajude a esclarecer dúvidas de outros aprendizes. 💬🙋
+## 📂 Arquivos Disponíveis
+
+| Tipo | Arquivo | Descrição |
+|------|---------|-----------|
+| 📦 Cenário Packet Tracer | [RoteamentoEstatico.pkt](https://academicoifpbedubr-my.sharepoint.com/:u:/g/personal/joseffer_maxwel_academico_ifpb_edu_br/Ef0oxIowpuVGpp2_A2TzsYsBGHa2256_NT-kRD0_bwJKtw?e=JmosfM) | Arquivo de topologia com todas as configurações aplicadas |
+| 📄 Documentação | [Instruções.pdf](https://academicoifpbedubr-my.sharepoint.com/:b:/g/personal/joseffer_maxwel_academico_ifpb_edu_br/ETGcpI6sU1hIsAr5kAhAJR4Bb7R67ja1rGPNAyMeaYgoaw?e=qmUJdc) | Etapas detalhadas de configuração e testes realizados |
 
 ## 🚀 Como Usar 🛠️
 
-1. Abra o software Packet Tracer em seu computador. 👨‍💻🖥️
-2. Carregue o arquivo de cenário fornecido neste repositório. 📁🗄️
-3. Siga as instruções detalhadas no cenário para configurar a rede e os serviços. 📋👩‍💻
+1. Abra o software Cisco Packet Tracer.
+2. Carregue o arquivo `.pkt` do repositório.
+3. Siga as instruções para configurar IPs, rotas e serviços.
 
-## 🔧 Projeto e Recursos 📊
+> ⚠️ **Nota:** É necessário ter uma conta gratuita na Cisco Networking Academy para baixar o simulador.
 
-- Cenários de configuração de rede. 🌐🔍
-- Recursos incluem o Packet Tracer (disponível no Cisco Networking Academy), PCs virtuais, Servidores, Switches virtuais e Roteadores. 💼🔮
-- Documentação para auxiliar no aprendizado. 📄🎓
+## 🛠️ Tecnologias Utilizadas
 
-## 📄 Licença 📃
+- Cisco Packet Tracer
+- Roteamento Estático via CLI
+- DHCP
+- DNS
+- Servidor Web Local
 
-Este projeto está licenciado sob a Licença MIT. Consulte o arquivo [LICENSE](LICENSE) para mais detalhes. 📜📤
+## 🤝 Como Você Pode Contribuir 📢
+
+- Sugira melhorias ou correções 🛠️💡
+- Compartilhe experiências sobre o projeto 🗣️🤓
+- Ajude outros aprendizes na discussão 💬🙋
+
+## 📜 Licença 📃
+
+Distribuído sob a Licença MIT. Veja o arquivo `LICENSE` para mais informações.
 
 ## 📧 Contato 📫
 
-- Se você tiver alguma dúvida ou quiser saber mais sobre o projeto, sinta-se à vontade para entrar em contato através do meu;
-- 📧 Email: [joseffermax1472@gmail.com]
-- 🌐 GitHub: [https://github.com/joseffermax]
+📧 Email: [joseffermax1472@gmail.com](mailto:joseffermax1472@gmail.com)  
+🔗 GitHub: [@joseffermax](https://github.com/joseffermax)
 
-Aproveite o aprendizado e divirta-se explorando o mundo das redes! 🎓🌐💡
+---
+
+<h2 align="center">🧠 Explore, configure e domine o roteamento estático! 🚀</h2>
